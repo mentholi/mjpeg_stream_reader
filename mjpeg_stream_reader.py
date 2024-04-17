@@ -11,6 +11,8 @@ parser = argparse.ArgumentParser(
     description='Read MJPEG stream and save as image files'
 )
 
+# http://109.247.15.178:6001/mjpg/video.mjpg
+# http://185.49.169.66:1024/cgi-bin/faststream.jpg?stream=half&fps=15&rand=COUNTER
 default_stream = "http://185.49.169.66:1024/cgi-bin/faststream.jpg?stream=half&fps=15&rand=COUNTER"
 parser.add_argument('-s', '--stream', help='URL of the MJPEG stream', default=default_stream)
 default_out_dir = "/tmp/"
